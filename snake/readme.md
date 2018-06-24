@@ -2,7 +2,9 @@
 
 Just a simple, good old snake game.
 
-![snaky in action](https://github.com/danpora/danpora/train-sessions/tree/master/snake/docs)
+[Snaky demo](https://github.com/danpora/danpora/train-sessions/snake/)
+
+![snaky in action](https://github.com/danpora/danpora/train-sessions/snake/docs/snaky_screen.png)
 
 
 ## Built With

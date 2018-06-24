@@ -4,7 +4,7 @@ Just a simple, good old snake game.
 
 [Snaky demo](https://danpora.github.io/train-sessions/snake)
 
-![snaky in action](https://github.com/danpora/danpora/train-sessions/snake/docs/snaky_screen.png)
+![snaky in action](https://github.com/danpora/train-sessions/snake/docs/snaky_screen.png)
 
 
 ## Built With

@@ -64,9 +64,9 @@ function onKeyPress (event) {
 
 function createFood (chains) {
   while (1) {
-    const randX = Math.floor(Math.random() * (WIDTH - BLOCK));
-    const randY = Math.floor(Math.random() * (HEIGHT - BLOCK));
-
+    const randX = Math.floor(Math.random() * WIDTH/BLOCK);
+    const randY = Math.floor(Math.random() * HEIGHT/BLOCK);
+    
     const isPartOfChain = chains.some(function (chain) {
       return chain.x === randX && chain.y === randY;
     });

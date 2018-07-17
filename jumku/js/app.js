@@ -20,6 +20,8 @@ function initGame() {
   difficultyFactor = 0.006;
   updateInterval = 4000;
   timer = 0;
+
+  setTimeout(updateGameLevel, updateInterval);
 }
 
 function setup() {
@@ -229,8 +231,6 @@ function draw(now) {
     window.requestAnimationFrame(draw);
   }
 }
-
-setTimeout(updateGameLevel, updateInterval);
 
 window.addEventListener('keypress', onKeyPress);
 window.requestAnimationFrame(draw);

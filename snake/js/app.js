@@ -1,7 +1,7 @@
 let snake;
 
 const BLOCK = 10;
-const DRAW_RATE = 30;
+const DRAW_RATE = 35;
 
 const WIDTH_SCALE = 0.9;
 const HEIGHT_SCALE = 0.9;
@@ -64,8 +64,9 @@ function onKeyPress (event) {
 
 function createFood (chains) {
   while (1) {
-    const randX = Math.floor(Math.random() * WIDTH/BLOCK);
-    const randY = Math.floor(Math.random() * HEIGHT/BLOCK);
+    const randX = Math.floor(Math.random() * (WIDTH/BLOCK)) * BLOCK;
+    const randY = Math.floor(Math.random() * (HEIGHT/BLOCK)) * BLOCK;
+    console.log('randX, randY::', randX, randY)
     
     const isPartOfChain = chains.some(function (chain) {
       return chain.x === randX && chain.y === randY;

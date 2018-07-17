@@ -66,7 +66,6 @@ function createFood (chains) {
   while (1) {
     const randX = Math.floor(Math.random() * (WIDTH/BLOCK)) * BLOCK;
     const randY = Math.floor(Math.random() * (HEIGHT/BLOCK)) * BLOCK;
-    console.log('randX, randY::', randX, randY)
     
     const isPartOfChain = chains.some(function (chain) {
       return chain.x === randX && chain.y === randY;

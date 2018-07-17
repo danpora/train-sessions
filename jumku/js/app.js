@@ -22,6 +22,7 @@ function initGame() {
   timer = 0;
 
   setTimeout(updateGameLevel, updateInterval);
+  window.requestAnimationFrame(draw);
 }
 
 function setup() {
@@ -233,4 +234,3 @@ function draw(now) {
 }
 
 window.addEventListener('keypress', onKeyPress);
-window.requestAnimationFrame(draw);

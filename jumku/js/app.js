@@ -214,7 +214,7 @@ function draw(now) {
   renderScore();
 
   if (isCollision()) {
-    const isOk = confirm('game is over!, refresh to start over.');
+    const isOk = confirm('game is over! restart?');
 
     if (isOk) {
       resetGame();

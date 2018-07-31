@@ -10,7 +10,10 @@ const MAX_OBSTACLE_SPEED = 7;
 const HORIZON_HEIGHT = 160;
 const MAX_OBSTACLE_LENGTH = 50;
 const MIN_OBSTACLE_LENGTH = 20;
+
 const JUMP_SPEED = -10;
+const BALL_RADIUS = 25;
+
 
 let difficultyFactor;
 let updateInterval;
@@ -99,7 +102,7 @@ const obstacles = {
 };
 
 const ball = {
-  radius: 25,
+  radius: BALL_RADIUS,
   xPos: 40,
   yPos: 135,
   xVel: 0,
@@ -170,7 +173,7 @@ function updateGameLevel() {
   if (rand < 0.5) {
     obstacles.create();
 
-    if (obstacles.velocity < 7) {
+    if (obstacles.velocity < MAX_OBSTACLE_SPEED) {
       obstacles.velocity = obstacles.velocity * 1.05;
     }
   }
